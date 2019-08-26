@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="TopNav"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="956c72eb-f14e-4846-abe6-60c5f5fa0df8"
+        ClientSideComponentProperties="{&quot;Top&quot;:&quot;TopMenuTermSet&quot;,&quot;Bottom&quot;:&quot;BottomMenuTermSet&quot;}">
+    </CustomAction>
+</Elements>
+

@@ -1,0 +1,240 @@
+.app {
+    .top {
+      height:40px;
+      text-align:left;
+      line-height:2.5;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      font-weight: 700;
+    }
+  
+    .bottom, a, a:visited, a:hover {
+      height:40px;
+      text-align:center;
+      line-height:2.5;
+      font-weight:bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .commandBar {
+      width: 100%;
+      font-weight: 700;
+    }
+
+    .commandBar button{
+      font-weight: 700;
+    }
+
+    .commandBar span{
+      font-weight: 700;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .MainToolbar{
+    display: block;
+  }
+  .Nav{
+    display: flex; 
+    // margin-bottom: -50px;
+    background: #e4e6e8;
+    // width: 100%;
+    // border: 1px solid #eee;
+    padding-left: 32px;
+    overflow: hidden;
+  }
+
+
+
+  .Nav div{
+    margin-bottom: 0px;
+  }
+
+  .Nav div ul li div button{
+    background: #e4e6e8;
+  }
+
+  
+
+  .Nav div ul li a{
+    background: #e4e6e8;
+  }
+  .Nav div ul{
+    margin: 8px 0;
+  }
+
+  // .Nav div ul li ul{
+  //   background: white;
+  // }
+
+  // .navItems{
+  //   background: #e4e6e8;
+  // }
+
+
+  .Backdrop {
+    width : 100%;
+    height: 100%;
+    position : fixed;
+    z-index : 100;
+    left: 0;
+    top: 0;
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+
+.DrawerToggle {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.DrawerToggle .Nav {
+  width: 90%;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .MainToolbar {
+      display: none;
+  }
+  .Hamburger{
+    position: relative;
+    padding: 14px 36px;
+    display:block;
+    background-color: #e4e6e8;
+  }
+}
+@media (min-width: 769px) {
+  .Hamburger{
+    // position: relative;
+    // // top: -1px;
+    // left: 24px;
+    display:none;
+  }
+}
+
+.SideDrawer{
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: white;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+
+@media(min-width: 500px){
+  .SideDrawer{
+      display:none;
+  }
+}
+
+.ToolBar .Nav div div {
+  margin-bottom: 10px;
+}
+
+.ToolbarItems .Nav{
+  display: block;
+}
+
+.ToolbarItems .Nav div div{
+  margin-bottom: -30px;
+}
+.Open{
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background: #e4e6e8;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+  transform: translateX(0);
+}
+
+.Close{
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: white;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+  transform: translateX(-100%);
+}
+
+.ToggleButton{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 34px;
+    // width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 3px;
+}
+.ButtonLine{
+  width: 30px;
+  height: 2px;
+  background: black;
+}
+
+.ButtonLine:focus {
+  outline: none;
+}
+
+.ToolBar .Nav{
+  display: block;
+}
+
+.CloseIcon{
+  position: relative;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Open i{
+  position: relative;
+  right: -208px;
+}
+
+.ms-Nav-groupContent{
+  margin-bottom: 10px;
+}
+
+// ul .active a{
+//   background-color: aqua;
+// }

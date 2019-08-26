@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": false,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://companycarlos.sharepoint.com/sites/NewTeam/SitePages/Home.aspx",
+      "customActions": {
+        "956c72eb-f14e-4846-abe6-60c5f5fa0df8": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "termSetId": "c691de1b-d78d-4b13-955e-37b180a297c3",
+            "TopMenuTermSet": "TopNavBar",
+            "BottomMenuTermSet": "FooterNavBar"
+          }
+        }
+      }
+    },
+    "topNav": {
+      "pageUrl": "https://companycarlos.sharepoint.com/sites/NewTeam/SitePages/Home.aspx",
+      "customActions": {
+        "956c72eb-f14e-4846-abe6-60c5f5fa0df8": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "termSetId": "c691de1b-d78d-4b13-955e-37b180a297c3",
+            "TopMenuTermSet": "TopNavBar",
+            "BottomMenuTermSet": "FooterNavBar"
+          }
+        }
+      }
+    }
+  }
+}
